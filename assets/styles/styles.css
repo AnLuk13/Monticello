@@ -1,0 +1,217 @@
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@200;300;400;500;600;700;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700&display=swap");
+html {
+  width: 1600px; }
+
+.welcome-page {
+  width: 1600px;
+  height: 800px;
+  background: linear-gradient(243deg, #7e5aff 16.9%, #55b7ff 83.27%); }
+  .welcome-page .welcome-page__background {
+    box-sizing: border-box;
+    padding: 0 0 50px 0;
+    width: 1600px;
+    height: 800px;
+    background: url(/assets/images/header_background.png);
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center; }
+    .welcome-page .welcome-page__background .nav-bar {
+      padding-top: 53px;
+      width: 1170px;
+      height: 54px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin: 0 auto; }
+      .welcome-page .welcome-page__background .nav-bar .nav-bar__menu {
+        width: 515px;
+        height: 18px;
+        display: flex;
+        justify-content: space-between; }
+        .welcome-page .welcome-page__background .nav-bar .nav-bar__menu .nav-bar__menu-link {
+          text-decoration: none;
+          color: #fff;
+          font-family: "Source Sans 3";
+          font-size: 14px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: normal;
+          height: 18px;
+          display: flex;
+          gap: 14px;
+          align-items: center; }
+      .welcome-page .welcome-page__background .nav-bar .nav-bar__social {
+        width: 160px;
+        height: 40px;
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        gap: 20px; }
+  .welcome-page .eclipse {
+    position: relative; }
+    .welcome-page .eclipse .brand-icon {
+      position: absolute;
+      top: 48%;
+      left: 50%;
+      transform: translate(-50%, -50%); }
+  .welcome-page .slider {
+    width: 100%;
+    height: 140px; }
+    .welcome-page .slider .slick-dots {
+      position: absolute;
+      top: 40px;
+      display: flex;
+      flex-direction: column;
+      align-items: end; }
+    .welcome-page .slider .slick-dots li button:before {
+      font-size: 10px; }
+    .welcome-page .slider .slider__title {
+      color: #fff;
+      font-family: Montserrat;
+      font-size: 80px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: normal;
+      letter-spacing: 8px;
+      text-align: center; }
+    .welcome-page .slider .slider__desc {
+      color: #fff;
+      font-family: Montserrat;
+      font-size: 18px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+      letter-spacing: 5.4px;
+      text-align: center; }
+
+.wwd-caption {
+  height: 273px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px; }
+  .wwd-caption .wwd-caption__line {
+    width: 100px;
+    height: 1px;
+    background: #2c4058; }
+  .wwd-caption .wwd-caption__title {
+    color: #2c4058;
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 44px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal; }
+
+.trade-center {
+  height: 667px;
+  display: flex;
+  gap: 70px; }
+  .trade-center .trade-center__box {
+    width: 845px;
+    height: 527px;
+    position: relative; }
+    .trade-center .trade-center__box .trade-center__figure {
+      width: 585px;
+      height: 470px;
+      background: #55b7ff; }
+    .trade-center .trade-center__box .trade-center__image {
+      width: 630px;
+      height: 470px;
+      position: absolute;
+      top: 57px;
+      left: 215px;
+      background: url(/assets/images/trade-center.png);
+      background-repeat: no-repeat;
+      background-size: cover; }
+  .trade-center .trade-center__textbox {
+    display: flex;
+    justify-content: center;
+    flex-direction: column; }
+
+.content__quote {
+  color: #2c4058;
+  font-family: Montserrat;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal; }
+
+.content__title {
+  color: #2c4058;
+  font-family: Montserrat;
+  font-size: 44px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  margin-bottom: 19px; }
+
+.content__desc {
+  width: 470px;
+  height: 81px;
+  color: #2c4058;
+  font-family: Open Sans;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 30px;
+  margin-bottom: 41px; }
+
+.content__link {
+  width: 108px;
+  padding: 16px 41px;
+  color: #000;
+  font-family: Montserrat;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  border: 1px solid #2c4058;
+  text-decoration: none;
+  margin-bottom: 60px; }
+
+.content__location-box {
+  display: flex;
+  gap: 10px;
+  align-items: center; }
+  .content__location-box .content__location {
+    color: #000;
+    font-family: Open Sans;
+    font-size: 15px;
+    font-style: italic;
+    font-weight: 400;
+    line-height: normal; }
+
+.commerce-center {
+  height: 667px;
+  display: flex;
+  gap: 70px; }
+  .commerce-center .commerce-center__textbox {
+    margin-left: 215px;
+    width: 845px;
+    height: 527px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column; }
+  .commerce-center .commerce-center__box {
+    width: 845px;
+    height: 527px;
+    display: flex;
+    justify-content: end;
+    position: relative; }
+    .commerce-center .commerce-center__box .commerce-center__figure {
+      width: 585px;
+      height: 470px;
+      background: #7e5aff; }
+    .commerce-center .commerce-center__box .commerce-center__image {
+      position: absolute;
+      top: 110px;
+      right: 57px;
+      width: 630px;
+      height: 470px;
+      background: url(/assets/images/commerce-center.png); }
