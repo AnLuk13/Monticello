@@ -2,7 +2,45 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700&display=swap");
 html {
-  width: 1600px; }
+  width: 1600px;
+  scroll-behavior: smooth; }
+
+.horizontal-line {
+  margin: 135px 0 30px 0;
+  background: #fff;
+  width: 100px;
+  height: 1px; }
+
+.section__text {
+  color: #fff;
+  text-align: center;
+  font-family: Montserrat;
+  font-size: 44px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal; }
+
+.nav-bar__social {
+  width: 160px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 20px; }
+
+.eclipse {
+  position: relative; }
+  .eclipse .brand-icon {
+    position: absolute;
+    top: 48%;
+    left: 50%;
+    transform: translate(-50%, -50%); }
+
+.black {
+  background: #2c4058; }
+
+.black-text {
+  color: #2c4058; }
 
 .welcome-page {
   width: 1600px;
@@ -44,20 +82,6 @@ html {
           display: flex;
           gap: 14px;
           align-items: center; }
-      .welcome-page .welcome-page__background .nav-bar .nav-bar__social {
-        width: 160px;
-        height: 40px;
-        display: flex;
-        justify-content: center;
-        align-items: flex-start;
-        gap: 20px; }
-  .welcome-page .eclipse {
-    position: relative; }
-    .welcome-page .eclipse .brand-icon {
-      position: absolute;
-      top: 48%;
-      left: 50%;
-      transform: translate(-50%, -50%); }
   .welcome-page .slider {
     width: 100%;
     height: 140px; }
@@ -173,7 +197,11 @@ html {
   line-height: normal;
   border: 1px solid #2c4058;
   text-decoration: none;
-  margin-bottom: 60px; }
+  margin-bottom: 60px;
+  transition: 0.4s; }
+  .content__link:hover {
+    background-color: #2c4058;
+    color: white; }
 
 .content__location-box {
   display: flex;
@@ -215,3 +243,275 @@ html {
       width: 630px;
       height: 470px;
       background: url(/assets/images/commerce-center.png); }
+
+.news-section {
+  width: 1600px;
+  height: 1035px;
+  background: url(/assets/images/news-background.png);
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+  .news-section .slider-container {
+    width: 100%; }
+  .news-section .slick-track {
+    display: flex; }
+  .news-section .slick-dots li button:before {
+    color: white;
+    font-size: 10px; }
+  .news-section .slider-container-annotation {
+    font-size: 2.8rem;
+    text-align: center;
+    font-weight: 400;
+    font-family: "Merriweather Sans", sans-serif; }
+  .news-section .destinations {
+    margin-left: 245px;
+    height: 574px;
+    width: 1100px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    display: flex;
+    justify-content: center; }
+  .news-section .destinations__clothing-item-img {
+    width: 370px;
+    height: 240px;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    object-fit: cover; }
+  .news-section .destinations__img-box-text {
+    width: 40%; }
+    .news-section .destinations__img-box-text .destinations__img-box-text-title {
+      padding: 0 20px;
+      width: 290px;
+      height: 50px;
+      color: #2c4058;
+      font-family: Montserrat;
+      font-size: 22px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: normal; }
+    .news-section .destinations__img-box-text .destinations__img-box-text-desc {
+      margin-top: 15px;
+      padding: 0 20px;
+      width: 290px;
+      height: 50px;
+      color: #2c4058;
+      font-family: Open Sans;
+      font-size: 18px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal; }
+    .news-section .destinations__img-box-text .destinations__img-box-text-person {
+      margin-top: 53px;
+      padding: 0 20px;
+      width: 290px;
+      height: 60px;
+      display: flex;
+      gap: 20px;
+      align-items: center; }
+      .news-section .destinations__img-box-text .destinations__img-box-text-person img {
+        border-radius: 50%; }
+      .news-section .destinations__img-box-text .destinations__img-box-text-person .person-name {
+        color: #2c4058;
+        font-family: Montserrat;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal; }
+      .news-section .destinations__img-box-text .destinations__img-box-text-person .person-date {
+        margin-top: 6px;
+        color: #55b7ff;
+        font-family: Montserrat;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal; }
+  .news-section .destinations__img-box {
+    height: 514px;
+    width: 370px !important;
+    overflow: hidden;
+    transition: 0.7s ease;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    background-color: whitesmoke;
+    margin: 10px 30px 10px 5px; }
+  .news-section .slick-dotted.slick-slider {
+    padding-left: 15px; }
+  .news-section .destinations__img-box:hover {
+    transform: scale(1.03); }
+  .news-section .destinations__img-box:hover .destinations__clothing-item-img {
+    opacity: 0.3; }
+  .news-section .destinations__img-box a {
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    border-radius: 12px;
+    border: 1px solid #95928e;
+    background-image: linear-gradient(to right, #94b7c6 0%, #5acdff 51%, #a9cfdf 100%);
+    background-size: 200% auto;
+    padding: 16px 20px;
+    text-decoration: none;
+    color: whitesmoke;
+    font-size: 1.25rem;
+    font-family: "Noto Sans", sans-serif;
+    transition: 0.5s ease; }
+  .news-section .destinations__img-box:hover a {
+    opacity: 1; }
+  .news-section .destinations__img-box a:hover {
+    background-position: right center; }
+
+.gallery-section {
+  height: 1000px;
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+  .gallery-section .gallery-photos {
+    margin-top: 89px;
+    width: 1170px;
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    grid-template-rows: 214px 214px;
+    gap: 10px 10px;
+    grid-template-areas: "panorama img-one img-two" "panorama img-three img-four"; }
+  .gallery-section .panorama {
+    position: relative;
+    grid-area: panorama;
+    background: url(/assets/images/web.png);
+    margin: 0 auto;
+    cursor: all-scroll;
+    width: 612px;
+    height: 100%;
+    background-size: 130%;
+    background-position: 50% 50%;
+    transition: background-position 1s linear; }
+    .gallery-section .panorama .deg {
+      position: absolute;
+      transform: translate(-50%, -50%);
+      top: 50%;
+      left: 50%;
+      width: 70px;
+      height: 70px;
+      background: url(/assets/images/360.png); }
+  .gallery-section .img-one {
+    grid-area: img-one;
+    background: url(/assets/images/building.png); }
+  .gallery-section .img-two {
+    grid-area: img-two;
+    background: url(/assets/images/echo.png); }
+  .gallery-section .img-three {
+    grid-area: img-three;
+    background: url(/assets/images/fuse.png); }
+  .gallery-section .img-four {
+    grid-area: img-four;
+    background: url(/assets/images/pham.png); }
+  .gallery-section .button {
+    margin-top: 76px;
+    color: #000;
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-decoration: none;
+    padding: 16px 57px;
+    border: 1px solid black;
+    transition: 0.4s; }
+    .gallery-section .button:hover {
+      background-color: #2c4058;
+      color: white; }
+
+.map {
+  width: 100%;
+  height: 700px; }
+
+.footer {
+  position: relative;
+  height: 549px;
+  background: linear-gradient(251deg, #7e5aff -2.19%, #55b7ff 103.21%); }
+  .footer .horizontal-line {
+    margin: 0px 0 30px 0; }
+  .footer .footer-contact {
+    position: absolute;
+    width: 770px;
+    height: 450px;
+    background-color: white;
+    transform: translate(-50%, -50%);
+    top: -8%;
+    left: 50%;
+    padding: 60px;
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+    .footer .footer-contact .footer-box {
+      display: flex;
+      gap: 54px;
+      margin-top: 42px; }
+      .footer .footer-contact .footer-box .footer-contact__address {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 286px;
+        height: 210px; }
+        .footer .footer-contact .footer-box .footer-contact__address .footer-contact__address-items {
+          color: #000;
+          font-family: Montserrat;
+          font-size: 18px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: 28px;
+          display: flex;
+          align-items: center;
+          gap: 5px; }
+      .footer .footer-contact .footer-box form {
+        height: 196px;
+        width: 310px;
+        display: flex;
+        flex-direction: column;
+        gap: 33px;
+        align-items: flex-end; }
+        .footer .footer-contact .footer-box form input {
+          width: 100%;
+          height: 27px;
+          font-size: 18px;
+          padding: 14px 0px;
+          border: none;
+          border-bottom: 2px solid #2c4058;
+          outline: none; }
+        .footer .footer-contact .footer-box form .form-submit {
+          width: 140px;
+          padding: 11px 34px;
+          color: #000;
+          font-family: Montserrat;
+          font-size: 18px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: 27px;
+          background-color: transparent;
+          transition: 0.3s; }
+          .footer .footer-contact .footer-box form .form-submit:hover {
+            background-color: #2c4058;
+            color: white; }
+  .footer .footer-background {
+    height: 100%;
+    background: url(/assets/images/header_background.png);
+    display: flex;
+    justify-content: center; }
+    .footer .footer-background .footer-container {
+      display: flex;
+      gap: 369px;
+      align-items: center;
+      padding-top: 100px; }
+      .footer .footer-background .footer-container .footer-container__box {
+        display: flex;
+        flex-direction: column;
+        gap: 41px; }
+      .footer .footer-background .footer-container .footer-text {
+        color: #fff;
+        font-family: Montserrat;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal; }
