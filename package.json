@@ -1,8 +1,14 @@
 {
   "scripts": {
-    "watch:scss": "node-sass -w styles.scss assets/styles/styles.css"
+    "watch:scss": "node-sass -w styles.scss assets/styles/styles.css",
+    "autoprefixer": "postcss assets/styles/styles.css --use autoprefixer -o assets/styles/modified-styles.css"
   },
   "dependencies": {
-    "node-sass": "^9.0.0"
+    "node-sass": "^9.0.0",
+    "postcss-cli": "^10.1.0"
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.4.16",
+    "postcss": "^8.4.30"
   }
 }
