@@ -22,11 +22,11 @@
   </head>
   <body>
     <header class="welcome-page">
-      <div class="welcome-page__background">
+      <div id="wwd" class="welcome-page__background">
         <nav class="nav-bar">
           <img src="/assets/images/Logo.png" alt="logo" />
           <div class="nav-bar__menu">
-            <a class="nav-bar__menu-link" href="">
+            <a class="nav-bar__menu-link" href="#wwd">
               <svg
                 width="9"
                 height="10"
@@ -38,7 +38,7 @@
               </svg>
               ABOUT US
             </a>
-            <a class="nav-bar__menu-link" href=""
+            <a class="nav-bar__menu-link" href="#trade-center"
               ><svg
                 width="9"
                 height="10"
@@ -50,7 +50,7 @@
               </svg>
               PROJECTS
             </a>
-            <a class="nav-bar__menu-link" href=""
+            <a class="nav-bar__menu-link" href="#news"
               ><svg
                 width="9"
                 height="10"
@@ -62,7 +62,7 @@
               </svg>
               NEWS
             </a>
-            <a class="nav-bar__menu-link" href=""
+            <a class="nav-bar__menu-link" href="#contacts"
               ><svg
                 width="9"
                 height="10"
@@ -208,7 +208,7 @@
     </header>
 
     <main>
-      <section class="wwd-caption">
+      <section id="trade-center" class="wwd-caption">
         <div class="wwd-caption__line"></div>
         <div class="wwd-caption__title">WHAT WE DO</div>
       </section>
@@ -270,7 +270,7 @@
           <div class="commerce-center__image"></div>
         </div>
       </section>
-      <section class="news-section">
+      <section id="news" class="news-section">
         <div class="horizontal-line"></div>
         <div class="section__text">LATEST NEWS</div>
         <div class="slider-container">
@@ -438,7 +438,7 @@
     </main>
 
     <footer id="footer" class="footer">
-      <div class="footer-contact">
+      <div id="contacts" class="footer-contact">
         <div class="horizontal-line black"></div>
         <div class="section__text black-text">GET IN TOUCH</div>
         <div class="footer-box">
@@ -501,8 +501,13 @@
             </div>
           </div>
           <form action="">
-            <input type="text" placeholder="Mollie Medina" />
-            <input type="email" placeholder="Email" />
+            <input
+              type="text"
+              maxlength="25"
+              autofocus
+              placeholder="Mollie Medina"
+            />
+            <input type="email" maxlength="25" placeholder="Email" />
             <button class="form-submit" type="submit">Submit</button>
           </form>
         </div>
